@@ -1,58 +1,28 @@
 #include <stdlib.h>
-#include <stdio.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
- * main - Entry point
- * Return: Always 0 (Success)
-*/
-
+  *main - Entry point
+  *Description: 'Check if a number is positive or negative'
+  *Return: always 0
+  */
 int main(void)
 {
-int n;
-srand(time(NULL));
-n = rand() - RAND_MAX / 2;
+	int n;
 
-printf("%d ", n);
-
-if (n > 0)
-{
-printf("is positive\n");
-}
-else if (n == 0)
-{
-printf("is zero\n");
-}
-else
-{
-printf("is negative\n");
-}
-#include <stdlib.h>
-#include <stdio.h>
-#include <time.h>
-
-/**
- * main - Entry point
- * Return: Always 0 (Success)
-*/
-
-int main(void)
-{
-int n;
-srand(time(NULL));
-n = rand() - RAND_MAX / 2;
-
-printf("%d ", n);
-
-if (n > 0)
-{
-printf("is positive\n");
-}
-else if (n == 0)
-{
-printf("is zero\n");
-}
-else
-{
-printf("is negative\n");
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
+	}
+	return (0);
 }
